@@ -21,6 +21,7 @@ const users2 = [
 	{id:4, name: 'Amanda'}
 ];
 
+//let lista = users2.filter((elemento)=>{// igual que la línea 25, solo que con arrow function =====>>>>
 let lista = users2.filter(function(elemento){
     if(elemento.name[0]==="A"){
         elemento.name= "Anacleto"
@@ -42,7 +43,7 @@ const cities = [
 let lista2 = cities.filter(function(elemento){
     if(elemento.isVisited== true){
         
-        elemento.name= elemento.name + " Visitado"
+        elemento.name= elemento.name + " ,Visitado"
     }
     return elemento.name
 })
